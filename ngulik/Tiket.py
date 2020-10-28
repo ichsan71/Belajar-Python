@@ -62,21 +62,19 @@ elif tujuan == 3:
         H_tiket=900000
     else:
         print("Anda salah Memasukan Pilihan!")
-
-    
-    if tujuan=="Yogyakarta" and kelas=="Ekonomi":
-        diskon=0.1*H_tiket
-    elif tujuan=="Surabaya" and kelas=="Eksekutif":
-        diskon=0.1*H_tiket
-    else:
-        diskon=0*H_tiket
-
 else:
     print("anda salah memasukan pilihan")
 
+if tujuan=="Yogyakarta" and kelas=="Ekonomi":
+    diskon=0.1*H_tiket;
+elif tujuan=="Surabaya" and kelas=="Eksekutif":
+    diskon=0.1*H_tiket
+else:
+    diskon=0
+
 print(str(banyak_tiket) + " x (Bandung-" + str(tujuan)+")" +" "+ str(kelas) )
 print("Harga Tiket : " + str(H_tiket))
-print("Diskon      : " + str(diskon))
+print("Diskon      : ",(diskon))
 H_setelah_Diskon = H_tiket - diskon
 print("Harga Setelah Diskon  : " + str(H_setelah_Diskon)+ "/Tiket")
 total = banyak_tiket * H_setelah_Diskon
