@@ -12,7 +12,7 @@ else:
 
 print("="*30)
 
-## For
+## For in
 orang = ['san', 'kusming', 'kusmang']
 
 for nama in orang:
@@ -20,7 +20,6 @@ for nama in orang:
 
 
 ## Percabangan
-
 a = 1
 
 while a < 5:
